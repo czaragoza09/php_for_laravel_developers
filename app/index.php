@@ -1,20 +1,35 @@
 <?php
 
-//QUERY STRING
-//var_dump ($_GET['name']);
+require 'app/helpers.php';
 
-//$name = 'Cinta';
-//API
-function great() {
-    $name = htmlspecialchars($_GET['name']);
-    $surname = $_GET['surname'];
+require 'app/Task.php';
 
-    return "Hola $name  $surname !";
+
+$task = new Task(1, 'comprar pa', 'a la panadería', 0);
+//var_dump($task);
+
+$user = 'debian-sys-maint';
+$pass = '2TgF0Sl0Meh3le4E';
+
+try{
+    $dbh = new PDO('mysql:host=localhost;dbname=phplaraveldevs', $user, $pass);
+
+} catch (\Exception $e) {
+    echo 'Error de connexió a la BDD';
 }
-$greeting = great();
+
+$statement = $dbh->prepare('SELECT * FROM task;');
+$statement->execute();
+
+$tasks = $statement->fetchAll(PDO::FETCH_CLASS, 'Task');
+var_dump($tasks);
+
+$greeting = greet();
 //echo great();
 
 
 
 //$greeting = 'Hola' . $_GET['name'] . ' '.  $_GET['surname'] . '!';
-
+//QUERY STRING
+//var_dump ($_GET['name']);
+//$name = 'Cinta';

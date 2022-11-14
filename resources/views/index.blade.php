@@ -24,7 +24,7 @@
             <th>Description</th>
             <th>Completed</th>
         </tr>
-        <?php foreach ($tasks as $task):?>
+        <?php foreach ($tasks as $task): ?>
         <tr>
 
             <td><?=$task->id;?></td>

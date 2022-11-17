@@ -8,3 +8,7 @@ Creat per Cinta Zaragoza
 V0.1: Exemple Hello World de PHP i HTML sense separar concerns 
 
 V0.2: Seguim amb el video i creem la base de dades
+
+V0.3: Codi final després de acabar el video 101
+
+

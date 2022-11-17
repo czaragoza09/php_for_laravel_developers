@@ -10,17 +10,11 @@ require 'config.php';
 //$pass = "2TgF0Sl0Meh3le4E";
 
 
-
-$user = $config['database']['user'];
-$pass = $config['database']['password'];
-$type = $config['database']['databasetype'];
-$host = $config['database']['host'];
-$name = $config['database']['name'];
-$dsn = "$type:host=$host;dbname=$name";
-
-
 try {
-    $dbh = new PDO($dsn, $user, $pass);
+    $dbh = new PDO(
+        $config['database']['databasetype'] . ':host=' . $config['database']['host'] . ';dbname=' . $config['database']['name'],
+        $config['database']['user'],
+        $config['database']['password']);
 } catch (\Exception $e) {
     echo "Error de connexió a la base de dades";
 }

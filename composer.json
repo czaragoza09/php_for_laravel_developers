@@ -1,0 +1,18 @@
+{
+    "name": "czaragoza/php_for_laravel_developers",
+    "description": "composer seguint video 102 del phpforlaraveldevelopers czaragoza",
+    "type": "project",
+    "autoload": {
+        "classmap": [
+            "./"
+
+        ]
+    },
+    "authors": [
+        {
+            "name": "czaragoza09",
+            "email": "czaragoza@iesebre.com"
+        }
+    ],
+    "require": {}
+}

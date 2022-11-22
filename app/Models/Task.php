@@ -1,10 +1,8 @@
 <?php
 
+namespace App\Models;
 
-class Task
-{
-
-
+class Task {
     public function __construct(){
 
     }

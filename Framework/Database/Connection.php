@@ -5,12 +5,11 @@ use PDO;
 
 class Connection
 {
-    private static $config;
+  //  private static $config;
 
     public static function make($config)
     {
-        //static::$config = $config;
-        try {
+           try {
             return new PDO(
                 $config['databasetype'] . ':host=' . $config['host'] . ';dbname=' . $config['name'],
                 $config['user'],

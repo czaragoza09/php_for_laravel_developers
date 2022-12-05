@@ -1,27 +1,27 @@
 <?php
 namespace Framework\Database;
 
-use App\Models\Task;
+//use App\Models\Task;
+
 use PDO;
 
 class Database
 {
-    private static $dbh;
+    protected $pdo;
 
 
-    public static function make($connection){
+    public function __construct($pdo){
 
-        static::$dbh = $connection;
-        return ;
+        $this->pdo = $pdo;
 
     }
     public function selectAll($table){
 
        # $dbh = $this->connection->connectDB();
-        $statement = static::$dbh->prepare("SELECT * FROM $table;");
+        $statement = $this->pdo->prepare("SELECT * FROM $table;");
         $statement->execute();
 
-        return $statement->fetchAll(PDO::FETCH_CLASS, Task::class);
+        return $statement->fetchAll(PDO::FETCH_CLASS);
 
     }
 
@@ -32,6 +32,7 @@ class Database
 }
 
 /*/
+// Task::class
 //  private $connection;
 
 public function __construct($config)

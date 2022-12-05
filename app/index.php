@@ -1,15 +1,17 @@
 <?php
 
 use Framework\App;
+use Framework\Database\Database;
 
-require 'app/helpers.php';
+require 'config.php';
+require 'app/Models/Task.php';
 
-$tasks = App::get('database')::selectAll('tasks');
+#require 'app/helpers.php';
 
-//$tasks = Database::selectAll('tasks'); //Crida estàtica -> sense new
+$tasks = App::get('database')->selectAll('tasks');
+
 //$tasks = Task::selectAll('tasks'); ->Laravel Eloquent
-//$database = new Database(App::get('config')['database']); //-> //Utilitzem DI i container casi mai new
-$greeting = greet();
+//$greeting = greet();
 
 
 

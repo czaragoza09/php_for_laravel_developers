@@ -1,21 +1,14 @@
 <?php
 
-use Framework\Database\Database;
+use Framework\App;
 
-require 'config.php';
 require 'app/helpers.php';
-//require 'app/Models/Task.php';
-//require 'Framework/Database/Database.php';
-//require 'Framework/Database/Connection.php';
 
-//PDO -> DOP
-
-//WISHFUL PROGRAMMING
-$database = new Database($config); //-> //Utilitzem DI i container casi mai new
-$tasks = $database->selectAll('tasks');
+$tasks = App::get('database')::selectAll('tasks');
 
 //$tasks = Database::selectAll('tasks'); //Crida estàtica -> sense new
 //$tasks = Task::selectAll('tasks'); ->Laravel Eloquent
+//$database = new Database(App::get('config')['database']); //-> //Utilitzem DI i container casi mai new
 $greeting = greet();
 
 

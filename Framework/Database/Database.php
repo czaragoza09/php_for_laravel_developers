@@ -6,21 +6,19 @@ use PDO;
 
 class Database
 {
+    private static $dbh;
 
-    public $config;
-  //  private $connection;
 
-    public function __construct($config)
-    {
-        $this->config = $config;
+    public static function make($connection){
 
-        $this->connection = new Connection($config);
+        static::$dbh = $connection;
+        return ;
+
     }
+    public function selectAll($table){
 
-
-    function selectAll($table){
-        $dbh = $this->connection->connectDB($this->config);
-        $statement = $dbh->prepare("SELECT * FROM $table;");
+       # $dbh = $this->connection->connectDB();
+        $statement = static::$dbh->prepare("SELECT * FROM $table;");
         $statement->execute();
 
         return $statement->fetchAll(PDO::FETCH_CLASS, Task::class);
@@ -32,3 +30,16 @@ class Database
         //TODO
     }
 }
+
+/*/
+//  private $connection;
+
+public function __construct($config)
+{
+    $this->config = $config;
+
+    $this->connection = Connection::make($config);
+}
+/*/
+//minut: 1:10:11 canvia uns quants parametres de estructura general
+//d'aquest document

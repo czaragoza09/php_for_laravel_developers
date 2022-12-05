@@ -5,23 +5,24 @@ use PDO;
 
 class Connection
 {
-    private $config;
-    public function __construct($config)
-    {
-        $this->config=$config;
-    }
+    private static $config;
 
-    function connectDB() //Dependency Injection
+    public static function make($config)
     {
-
+        //static::$config = $config;
         try {
             return new PDO(
-                $this->config['database']['databasetype'] . ':host=' . $this->config['database']['host'] . ';dbname=' . $this->config['database']['name'],
-                $this->config['database']['user'],
-                $this->config['database']['password']);
+                $config['databasetype'] . ':host=' . $config['host'] . ';dbname=' . $config['name'],
+                $config['user'],
+                $config['password']);
         } catch (\Exception $e) {
             echo "Error de connexió a la base de dades";
         }
     }
 
 }
+//   public function __construct($config)
+//    {
+//        $this->config=$config;
+//        $this->connection = Connection::make($config);
+//    }

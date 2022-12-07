@@ -1,7 +1,6 @@
 <?php
 
-function greet()
-{
+function greet() {
     $name = htmlspecialchars($_GET['name']);
     $surname = $_GET['surname'];
 

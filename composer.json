@@ -6,6 +6,9 @@
         "classmap": [
             "./"
 
+        ],
+        "files": [
+            "Framework/helpers.php"
         ]
     },
     "authors": [

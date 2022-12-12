@@ -15,10 +15,19 @@
     </style>
 </head>
 <body>
+<nav>
+    <ul>
+        <li><a href="/tasks.html">Tasques</a></li>
+        <li><a href="/users.html">Uses</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/index.php">Home</a></li>
+    </ul>
+</nav>
 <header>
-<h1><?=$greeting;?></h1>
+    <h1><?=$greeting;?></h1>
     <table>
-          <tr>
+        <tr>
             <th>ID</th>
             <th>Title</th>
             <th>Description</th>

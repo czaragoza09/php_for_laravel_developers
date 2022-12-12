@@ -1,10 +1,14 @@
 <?php
 
-$routes = [
-// MAPEIG URLS
-'https://localhost:8006/contact' =>'app/Http/Controllers/contact.php',
-'https://localhost:8006/about' =>'app/Http/Controllers/about.php',
-'https://localhost:8006/tasks' =>'app/Http/Controllers/tasks.php'
+return [
+
+    //MAPEIG URL -> URI
+    '/' => 'app/Http/Controllers/index.php',
+    '/index.php' => 'app/Http/Controllers/index.php',
+    '/index' => 'app/Http/Controllers/index.php',
+    '/contact' => 'app/Http/Controllers/contact.php',
+    '/about' => 'app/Http/Controllers/about.php',
+    '/tasks' => 'app/Http/Controllers/tasks.php'
 
 ];
 

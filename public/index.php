@@ -3,9 +3,9 @@
 
 use Framework\App;
 
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 
-require 'Framework/bootstrap.php';
+require '../Framework/bootstrap.php';
 
 
 
@@ -23,8 +23,9 @@ require 'Framework/bootstrap.php';
 
 App::get('router')->redirect($_SERVER['REQUEST_URI']);
 
+//echo "1111";
 //require 'app/index.php';
 
-//require  'resources/views/index.blade.php';
+require  'resources/views/index.blade.php';
 
 #engantxar diferen ts fitxers en un sol fitxer de php

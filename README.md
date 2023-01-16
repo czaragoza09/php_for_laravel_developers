@@ -28,3 +28,5 @@ production ->  git checkout production
 Recordar afegir les taules de la  bases de dades al laravel forge:
 "PHP message: PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'phplaraveldevs.tasks' doesn't exist in /home/forge/phpforlaraveldevelopers.czaragoza.systems/Framework/Database/Database.php:22
 Stack trace:
+
+16/01 -> creem la part dels users 

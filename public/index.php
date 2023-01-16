@@ -28,4 +28,5 @@ App::get('router')->redirect($_SERVER['REQUEST_URI']);
 
 require  'resources/views/index.blade.php';
 
+
 #engantxar diferen ts fitxers en un sol fitxer de php

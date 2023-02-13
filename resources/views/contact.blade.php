@@ -45,24 +45,24 @@
                 </svg>
                 <div class="text-center">
                     <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact sales</h2>
-                    <p class="mt-4 text-lg leading-6 text-gray-500">Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.</p>
+                    <p class="mt-4 text-lg leading-6 text-gray-500">Introdueix les teves dades per subscriure't i rebre les notificacions de les actualitzacions de la pàgina</p>
                 </div>
                 <div class="mt-12">
                     <form action="#" method="POST" class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                         <div>
-                            <label for="first-name" class="block text-sm font-medium text-gray-700">First name</label>
+                            <label for="first-name" class="block text-sm font-medium text-gray-700">Noms</label>
                             <div class="mt-1">
                                 <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
                             </div>
                         </div>
                         <div>
-                            <label for="last-name" class="block text-sm font-medium text-gray-700">Last name</label>
+                            <label for="last-name" class="block text-sm font-medium text-gray-700">Cognoms</label>
                             <div class="mt-1">
                                 <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
                             </div>
                         </div>
                         <div class="sm:col-span-2">
-                            <label for="company" class="block text-sm font-medium text-gray-700">Company</label>
+                            <label for="company" class="block text-sm font-medium text-gray-700">Companyia</label>
                             <div class="mt-1">
                                 <input type="text" name="company" id="company" autocomplete="organization" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
                             </div>
@@ -74,7 +74,7 @@
                             </div>
                         </div>
                         <div class="sm:col-span-2">
-                            <label for="phone-number" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                            <label for="phone-number" class="block text-sm font-medium text-gray-700">Numero de telefón</label>
                             <div class="relative mt-1 rounded-md shadow-sm">
                                 <div class="absolute inset-y-0 left-0 flex items-center">
                                     <label for="country" class="sr-only">Country</label>
@@ -84,7 +84,7 @@
                                         <option>EU</option>
                                     </select>
                                 </div>
-                                <input type="text" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full rounded-md border-gray-300 py-3 px-4 pl-20 focus:border-indigo-500 focus:ring-indigo-500" placeholder="+1 (555) 987-6543">
+                                <input type="text" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full rounded-md border-gray-300 py-3 px-4 pl-20 focus:border-indigo-500 focus:ring-indigo-500" placeholder="+34 639 58 56 25">
                             </div>
                         </div>
                         <div class="sm:col-span-2">
@@ -105,16 +105,33 @@
                                 </div>
                                 <div class="ml-3">
                                     <p class="text-base text-gray-500">
-                                        By selecting this, you agree to the
+                                        Seleccionant això estas d'acord amb les següents politiques de privacitat:
+
                                         <a href="#" class="font-medium text-gray-700 underline">Privacy Policy</a>
-                                        and
+                                        Objecte: El present document té com a objectiu establir les bases legals per al tractament de les dades personals per a la subscripció al butlletí informatiu en català.
+
+                                        Responsable del tractament: [Cinta Zaragoza Blanch].
+
+                                        Finalitat del tractament: Les dades personals seran tractades per a la finalitat de mantenir informat als subscriptors sobre les activitats i novetats relacionades amb aquesta pàgina web.
+
+                                        Legitimació: La base legal per al tractament de les dades és el consentiment prestat pel titular de les dades.
+
+                                        Destinataris: Les dades no seran cedides a tercers, excepte en els casos en què existeixi una obligació legal.
+
+                                        Drets: Els titulars de les dades tenen el dret d'accés, rectificació, supressió, oposició, limitació del tractament i portabilitat de les seves dades. També tenen dret a retirar el consentiment prestat en qualsevol moment sense que això afecti la licitud del tractament basat en el consentiment prestat abans de la seva retirada.
+
+                                        Mesures de seguretat: S'han adoptat les mesures tècniques i organitzatives necessàries per garantir la seguretat de les dades personals i evitar la seva alteració, pèrdua, tractament o accés no autoritzat.
+
+                                        Informació addicional: Per a qualsevol consulta o aclariment relacionat amb el tractament de les dades personals, els titulars de les dades poden contactar amb Cinta Zaragoza: cintazaragozablanch@gmail.com .
+
+                                        Aquest document ha estat elaborat i actualitzat en data 13/02/23.
                                         <a href="#" class="font-medium text-gray-700 underline">Cookie Policy</a>.
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="sm:col-span-2">
-                            <button type="submit" class="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Let's talk</button>
+                            <button type="submit" class="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Let's talk <3</button>
                         </div>
                     </form>
                 </div>

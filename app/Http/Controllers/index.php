@@ -4,7 +4,7 @@ use Framework\App;
 
 $tasks = App::get('database')->selectAll('tasks');
 
-$greeting = greet();
+$greeting = 'Sóc Cinta Zaragoza, benvingut a la meva pàgina';
 
 //dd($greeting);
 
